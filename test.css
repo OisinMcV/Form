@@ -1,0 +1,237 @@
+@font-face {
+	font-family: 'Ostrich Sans';
+	src: url('ostrich-sans-bold.eot');
+	src: local('☺'), url('ostrich-sans-bold.woff') format('woff'), url('ostrich-sans-bold.ttf') format('truetype'), url('ostrich-sans-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+} /* https://www.theleagueofmoveabletype.com/ */
+
+html {
+	overflow-x: hidden;
+}
+body {
+	background: url("skulls.png") top left repeat; /*http://subtlepatterns.com/*/
+}
+
+h1 {
+	position: relative;
+	font-size: 6em;
+	top: 15px;
+	
+	-webkit-transition: .3s linear 0s;
+	-transition: .3s linear 0s;
+}
+
+#container {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+#header {
+	font-family: 'Ostrich Sans', sans-serif;
+	text-align: center;
+	width: 850px;
+	height: 150px;
+	margin: -30px auto 0;
+	background-image: url("banner.png");
+}
+
+.circle{
+	font-family: 'Ostrich Sans', sans-serif; 
+	font-size: 5em;
+	color: black;
+	
+	width: 120px;
+	height: 120px;
+	background-color: #FFF5CC; 
+	border-radius: 50%;
+	border: 6px double black;
+	text-align: center;
+	
+	position: relative;
+	top: -25px;
+	right: -45px;
+	
+	-webkit-transition: .15s linear 0s;
+	transition: .15s linear 0s;
+}
+
+.circle:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.circle p {
+	position: relative;
+	top: -55px;
+}
+
+
+label {
+	position: relative;
+	top: -108px;
+	right: -180px;
+	
+	font-size: 1.5em;
+	font-family: 'Rye', cursive;
+	
+	border-bottom: 6px double black;
+}
+
+#one, #two, #three {
+	display: inline-block;
+	margin-top: 100px;
+	margin-left: 5px;
+} 
+
+input, textarea {
+	width: 300px;
+	height: 30px;
+	margin-left: 8px;
+	padding: 1px 0;
+	border:none;
+	border-bottom: 2px dotted #333;
+	background: none;
+	font-size: 1.2rem;
+	font-family: Monospace;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	
+	float: left;
+}
+
+textarea {
+    resize:vertical;
+	height: 25.5px;
+	padding-top: 4.5px;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+#submit {
+	display: block;
+	margin: 0 auto;
+}
+
+input[type="submit"] {
+	
+	width: 150px;
+	height: 70px;
+	border: none;
+	
+	font-family: 'Ostrich Sans', sans-serif;
+	font-size: 2.5rem;
+	color: white;
+	cursor: pointer;
+	
+	position: relative;
+	top: -75px;
+	right: -165px;
+}
+
+input[type="submit"]:hover {
+	font-size:2.8em;
+}
+
+#button {
+	height: 50px;
+	width: 500px;
+	margin: 55px auto 0;
+	
+}
+
+@media screen and (max-width: 980px){
+	
+	h1 {
+		font-size: 4em;
+		top: 38px;
+	}
+
+	#container {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#one, #two, #three {
+		margin : 50px auto;
+		position: relative;
+		left: 185px;
+	}
+	
+	#header {
+		max-width: 500px;
+		margin: -40px auto;
+		background: url("banner-medium.png") center center no-repeat;
+	}
+	
+	#button {
+		width: 200px;
+		margin: 55px 0 30px 120px;
+	}
+	
+	#submit {
+		width: 250px;
+	}
+	
+	input, textarea {
+		width: 300px;
+		height: 30px;
+		margin-left: 0px;
+		position: relative;
+		left: -60px;
+	}
+	
+	input[type="submit"] {
+		left: 50px;
+		top: -65px;
+	}
+	
+	input, textarea {
+		width: 250px;
+	}
+	.circle{
+		right: 5px;
+	}
+	label {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 530px){
+	
+	h1 {
+		font-size: 3em;
+		top: 45px;
+	}
+
+	#container {
+		max-width: 250px;
+	}
+
+	#one, #two, #three {
+		left: 68px;
+	}
+	
+	#header {
+		max-width: 300px;
+		margin: -50px auto;
+		background: url("banner-small.png") center center no-repeat;
+	}
+	
+	#button {
+		width: 200px;
+		margin: 55px auto 20px;
+	}
+	
+	#submit {
+		width: 220px;
+	}
+	
+	input[type="submit"] {
+		left: 38px;
+		top: -62px;
+	}
+}
